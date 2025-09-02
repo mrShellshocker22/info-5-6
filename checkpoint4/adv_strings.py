@@ -15,11 +15,10 @@ input_string = input("Please type a message: ")
 #     print(input_string[i])
 #     i += 1
 
-#example 2
-# i = -1
-# while i >= -len(input_string):
-#     print(input_string[i])
-#     i -= 1
+# #example 2
+while i >= -len(input_string):
+     print(input_string[i])
+     i -= 1
 
 print("h" in input_string)
 print("j" in input_string)
