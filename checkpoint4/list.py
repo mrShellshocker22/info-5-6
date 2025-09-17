@@ -15,7 +15,7 @@ forth_leader = input("type the forth leader: ") #pedimos un input
 leaders.append(forth_leader) #agregamos el input en la lista
 
 # leaders.pop(0) #remueve posiciones especificas de la lista
-print(leaders.index("Miguel Hidalgo")) 
+print(leaders.index("Miguel Hidalgo")) #index te dice en que posicion esta el elemento
 print(leaders.count("Vicente Guerrero")) #cuenta cuantas veces aparece el elemento en la lista
 
 print(leaders.sort(leaders)) #ordena alfabeticamente la lista
