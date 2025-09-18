@@ -8,6 +8,9 @@ print(weekly_playlist[0:])
 print(weekly_playlist.index("Levitating"))
 print(weekly_playlist.count("As It Was"))
 
-weekly_playlist_nodified.extend (weekly_playlist)
-print(weekly_playlist.reverse())
-print(weekly_playlist.sort())
+#weekly_playlist_nodified.extend (weekly_playlist)
+playlist_new = weekly_playlist
+playlist_new.reverse()
+print(playlist_new)
+playlist_new.sort()
+print(playlist_new)
