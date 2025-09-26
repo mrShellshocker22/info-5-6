@@ -3,7 +3,6 @@ capitals = {
     "Canada": "Ottawa",
     "Brazil": "Brasília",
 }
-
 capitals["Italy"] = "Rome" #add a new key and value
 del capitals["Brazil"] #delete a key
 capitals.pop("Canada") 
