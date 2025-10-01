@@ -11,3 +11,6 @@ message = input("Enter a message: ")
 dictionary = {}
 character_counter(message, dictionary)
 
+print(f"your message have: {len(message)} characters")
+
+
