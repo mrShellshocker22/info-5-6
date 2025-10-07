@@ -57,6 +57,11 @@ while True:
     word = input("type your word: ").upper()
     wrong_characters = []
 
+    if word == "": # if you dont write anything it stops the game
+        print("Game Over")
+        print(f"Your final score is {score(word)}")
+        break
+
     valid = True
     for i in word: 
         if i in list_letters:
