@@ -24,8 +24,9 @@ while True:
 
         if combination == "Milk,Watermelon" or combination == "Watermelon,Milk":
             print("sorry you can not combine Milk and Oranges\n")
-
-        print(f"The combination of calories of {element_1} and {element_2} is: {food_dic[element_1] + food_dic[element_2]}")
+        else:
+            print(f"The combination of calories of {element_1} and {element_2} is: {food_dic[element_1] + food_dic[element_2]}")
+            break
     except KeyError:
         print("sorry we dont know the calories of this combination\n")
     except IndexError:
