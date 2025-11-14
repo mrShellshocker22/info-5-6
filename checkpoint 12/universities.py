@@ -1,14 +1,17 @@
-
+import requests
 universities = {
-    "Eastern Arizona College" : {"Majors" : , "Cost" : 7750, "Distance" : 428, "Location" : "Thatcher"},
-    "BYU Pathway" : {"Majors" : , "Cost" : 18325, "Distance" : , "Location" : "Idaho" },
-    "Tec Milenio" : {"Majors" : , "Cost" : 14000, "Distance" : , "Location : "Chihuahua" },
-    "Tec Monterrey CDJ" : {"Majors" : , "Cost" : 135000, "Distance" : , "Location" : "Ciudad Juarez"},
-    "UACJ" : {"Majors" : , "Cost"  : 11520, "Distance" : , "Location" : "Ciudad Juarez"},
+    "Eastern Arizona College" : {"Majors" : "50", "Cost" : "7750", "Location" : "Thatcher", "Website" : ""},
+    "Brigham Young University - Idaho" : {"Majors" : "30 online certificates", "Cost" : "18325", "Location" : "Idaho", "Website" : "" },
+    "Tecmilenio" : {"Majors" : "24", "Cost" : "14000", "Location : "Chihuahua", "Website" : "" },
+    "Tec Monterrey CDJ" : {"Majors" : "15", "Cost" : "135000", "Location" : "Ciudad Juarez", "Website" : "" },
+    "UACJ" : {"Majors" : "55", "Cost"  : 11520, "Location" : "Ciudad Juarez", "Website" : "" },
     }
 
 try:
     x = input("what university do you wanna know about?: " )
-    print(universities)
+    response = requests.get("http://universities.hipolabs.com/search?name=" + x)
+    print(response.json()[0]["web_pages"][0])
+
 except ValueError,IndexError:
+
     print("something went off, please try again")
