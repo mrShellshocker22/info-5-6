@@ -9,4 +9,4 @@ response = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=" + AP
 bitcoin_price = float(response.json()["data"]["priceUsd"]) 
 
 total = round(bitcoin * bitcoin_price, 2)
-print(f"Your total will be ${total}")
+print(f"Your total will be: ${total}")
